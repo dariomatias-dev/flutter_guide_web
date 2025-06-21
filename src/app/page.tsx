@@ -3,9 +3,10 @@
 import { Code, Smartphone, Sparkles, Star } from "lucide-react";
 import Link from "next/link";
 
+import { Footer } from "@/components/Footer";
+import { ToggleThemeButton } from "@/components/toggleThemeButton";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { ToggleThemeButton } from "@/components/toggleThemeButton";
 
 export default function Home() {
   const playStoreUrl =
@@ -138,29 +139,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="bg-background w-full border-t px-16">
-        <div className="flex w-full flex-col items-center justify-between gap-4 py-6 text-center md:flex-row md:text-left">
-          <div className="text-muted-foreground flex flex-col items-center gap-2 text-sm md:flex-row">
-            <span>© 2025 Flutter Guide</span>
-
-            <span className="hidden md:inline">|</span>
-
-            <span>All rights reserved</span>
-          </div>
-
-          <div className="text-muted-foreground text-sm">
-            Developed by{" "}
-            <Link
-              href={"https://github.com/dariomatias-dev"}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-primary underline"
-            >
-              Dário Matias
-            </Link>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
