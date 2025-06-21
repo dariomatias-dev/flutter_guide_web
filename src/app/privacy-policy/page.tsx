@@ -1,46 +1,67 @@
 import Link from "next/link";
 
+import {
+  Breadcrumb,
+  BreadcrumbList,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbSeparator,
+  BreadcrumbPage,
+} from "@/components/ui/breadcrumb";
+import { Footer } from "@/components/Footer";
+import { Header } from "@/components/Header";
+
 export default function PrivacyPolicy() {
   return (
-    <div className="min-h-screen bg-background px-4 py-12 md:px-20 md:py-24 text-muted-foreground">
-      <main className="max-w-3xl mx-auto space-y-8">
-        <h1 className="text-4xl font-bold text-center mb-6">Privacy Policy</h1>
+    <div className="min-h-screen flex flex-col bg-background">
+      <Header />
 
-        <section className="space-y-4">
-          <p>
-            This privacy policy applies to the Flutter Guide app (hereby referred to as "Application") for mobile devices that was created by Dário Matias (hereby referred to as "Service Provider") as a Free service. This service is intended for use "AS IS".
-          </p>
-        </section>
+      <main className="flex-grow max-w-3xl mx-auto px-6 py-10 md:px-12 md:py-16">
+        <Breadcrumb>
+          <BreadcrumbList>
+            <BreadcrumbItem>
+              <BreadcrumbLink asChild>
+                <Link href="/">Home</Link>
+              </BreadcrumbLink>
+            </BreadcrumbItem>
 
-        <section className="space-y-4">
-          <h2 className="text-2xl font-semibold">Information Collection and Use</h2>
+            <BreadcrumbSeparator />
+
+            <BreadcrumbItem>
+              <BreadcrumbPage>Privacy Policy</BreadcrumbPage>
+            </BreadcrumbItem>
+          </BreadcrumbList>
+        </Breadcrumb>
+
+        <h1 className="text-3xl md:text-4xl font-bold text-center my-8">Privacy Policy</h1>
+
+        <section className="space-y-5 leading-relaxed text-foreground">
           <p>
-            The Application collects information when you download and use it. This information may include information such as:
+            This Privacy Policy governs how the Flutter Guide app (referred to as the "Application"), developed by Dário Matias ("Service Provider"), collects, uses, and protects your information. This service is offered as-is and free of charge.
           </p>
-          <ul className="list-disc list-inside space-y-2">
-            <li>Your device's Internet Protocol address (e.g. IP address)</li>
-            <li>The pages of the Application that you visit, the time and date of your visit, the time spent on those pages</li>
-            <li>The time spent on the Application</li>
-            <li>The operating system you use on your mobile device</li>
+
+          <h2 className="text-xl md:text-2xl font-semibold mt-6 mb-3">Information Collection and Use</h2>
+          <p>The Application may collect the following information:</p>
+          <ul className="list-disc list-inside space-y-1">
+            <li>Your device's IP address</li>
+            <li>Pages you visit within the Application, along with timestamps and duration</li>
+            <li>Overall time spent on the Application</li>
+            <li>Your mobile device's operating system</li>
           </ul>
-          <p>The Application does not gather precise information about the location of your mobile device.</p>
+          <p>The Application does not collect precise geolocation data.</p>
           <p>
-            The Service Provider may use the information you provided to contact you from time to time to provide you with important information, required notices and marketing promotions.
+            Occasionally, the Service Provider may contact you with important notices or promotional materials using the information you provide.
           </p>
           <p>
-            For a better experience, while using the Application, the Service Provider may require you to provide us with certain personally identifiable information, including but not limited to Asset information, Personal features. The information that the Service Provider request will be retained by them and used as described in this privacy policy.
+            For enhanced functionality, the Application may request certain personally identifiable information, which will be handled according to this policy.
           </p>
-        </section>
 
-        <section className="space-y-4">
-          <h2 className="text-2xl font-semibold">Third Party Access</h2>
+          <h2 className="text-xl md:text-2xl font-semibold mt-6 mb-3">Third Party Access</h2>
           <p>
-            Only aggregated, anonymized data is periodically transmitted to external services to aid the Service Provider in improving the Application and their service. The Service Provider may share your information with third parties in the ways that are described in this privacy statement.
+            Aggregated, anonymized data may be shared with trusted third-party services to improve the Application and related services.
           </p>
-          <p>
-            Please note that the Application utilizes third-party services that have their own Privacy Policy about handling data. Below are the links to the Privacy Policy of the third-party service providers used by the Application:
-          </p>
-          <ul className="list-disc list-inside space-y-2">
+          <p>The Application also uses third-party services, each with their own privacy policies:</p>
+          <ul className="list-disc list-inside space-y-1">
             <li>
               <Link
                 href="https://policies.google.com/privacy"
@@ -51,9 +72,10 @@ export default function PrivacyPolicy() {
                 Google Play Services
               </Link>
             </li>
+
             <li>
               <Link
-                href="https://support.google.com/admob/answer/6128543?hl=en"
+                href="https://policies.google.com/privacy"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="underline hover:text-primary"
@@ -62,67 +84,58 @@ export default function PrivacyPolicy() {
               </Link>
             </li>
           </ul>
-          <p>The Service Provider may disclose User Provided and Automatically Collected Information:</p>
-          <ul className="list-disc list-inside space-y-2">
-            <li>as required by law, such as to comply with a subpoena, or similar legal process;</li>
-            <li>when they believe in good faith that disclosure is necessary to protect their rights, protect your safety or the safety of others, investigate fraud, or respond to a government request;</li>
-            <li>with their trusted services providers who work on their behalf, do not have an independent use of the information we disclose to them, and have agreed to adhere to the rules set forth in this privacy statement.</li>
+          <p>Disclosure of your information may occur in the following cases:</p>
+          <ul className="list-disc list-inside space-y-1">
+            <li>As required by law or legal processes</li>
+            <li>To protect rights, safety, or investigate fraud</li>
+            <li>With trusted service providers who comply with this privacy policy</li>
           </ul>
-        </section>
 
-        <section className="space-y-4">
-          <h2 className="text-2xl font-semibold">Opt-Out Rights</h2>
+          <h2 className="text-xl md:text-2xl font-semibold mt-6 mb-3">Opt-Out Rights</h2>
+          <p>You can stop information collection by uninstalling the Application using standard device procedures.</p>
+
+          <h2 className="text-xl md:text-2xl font-semibold mt-6 mb-3">Data Retention Policy</h2>
           <p>
-            You can stop all collection of information by the Application easily by uninstalling it. You may use the standard uninstall processes as may be available as part of your mobile device or via the mobile application marketplace or network.
+            Your data is retained only as long as necessary. To request deletion of your data, please contact:{" "}
+            <a href="mailto:matiasdario75@gmail.com" className="underline hover:text-primary">
+              matiasdario75@gmail.com
+            </a>.
           </p>
-        </section>
 
-        <section className="space-y-4">
-          <h2 className="text-2xl font-semibold">Data Retention Policy</h2>
+          <h2 className="text-xl md:text-2xl font-semibold mt-6 mb-3">Children</h2>
           <p>
-            The Service Provider will retain User Provided data for as long as you use the Application and for a reasonable time thereafter. If you'd like them to delete User Provided Data that you have provided via the Application, please contact them at <a href="mailto:matiasdario75@gmail.com" className="underline hover:text-primary">matiasdario75@gmail.com</a> and they will respond in a reasonable time.
-          </p>
-        </section>
-
-        <section className="space-y-4">
-          <h2 className="text-2xl font-semibold">Children</h2>
-          <p>
-            The Service Provider does not use the Application to knowingly solicit data from or market to children under the age of 13.
+            The Application is not intended for children under 13 and does not knowingly collect their data. If such data is discovered, it will be promptly deleted.
           </p>
           <p>
-            The Application does not address anyone under the age of 13. The Service Provider does not knowingly collect personally identifiable information from children under 13 years of age. In the case the Service Provider discover that a child under 13 has provided personal information, the Service Provider will immediately delete this from their servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact the Service Provider (<a href="mailto:matiasdario75@gmail.com" className="underline hover:text-primary">matiasdario75@gmail.com</a>) so that they will be able to take the necessary actions.
+            Parents or guardians who suspect their child has provided personal data can contact the Service Provider at{" "}
+            <a href="mailto:matiasdario75@gmail.com" className="underline hover:text-primary">
+              matiasdario75@gmail.com
+            </a>.
           </p>
-        </section>
 
-        <section className="space-y-4">
-          <h2 className="text-2xl font-semibold">Security</h2>
+          <h2 className="text-xl md:text-2xl font-semibold mt-6 mb-3">Security</h2>
+          <p>Reasonable physical, electronic, and procedural safeguards are in place to protect your information.</p>
+
+          <h2 className="text-xl md:text-2xl font-semibold mt-6 mb-3">Changes to This Policy</h2>
           <p>
-            The Service Provider is concerned about safeguarding the confidentiality of your information. The Service Provider provides physical, electronic, and procedural safeguards to protect information the Service Provider processes and maintains.
+            This Privacy Policy may be updated occasionally. Continued use of the Application constitutes acceptance of changes. Please review regularly.
           </p>
-        </section>
+          <p className="italic mt-2">Effective date: January 6, 2025</p>
 
-        <section className="space-y-4">
-          <h2 className="text-2xl font-semibold">Changes</h2>
-          <p>
-            This Privacy Policy may be updated from time to time for any reason. The Service Provider will notify you of any changes to the Privacy Policy by updating this page with the new Privacy Policy. You are advised to consult this Privacy Policy regularly for any changes, as continued use is deemed approval of all changes.
-          </p>
-          <p className="italic mt-2">This privacy policy is effective as of 2025-01-06</p>
-        </section>
+          <h2 className="text-xl md:text-2xl font-semibold mt-6 mb-3">Your Consent</h2>
+          <p>By using the Application, you consent to the terms outlined in this Privacy Policy.</p>
 
-        <section className="space-y-4">
-          <h2 className="text-2xl font-semibold">Your Consent</h2>
+          <h2 className="text-xl md:text-2xl font-semibold mt-6 mb-3">Contact Us</h2>
           <p>
-            By using the Application, you are consenting to the processing of your information as set forth in this Privacy Policy now and as amended by us.
-          </p>
-        </section>
-
-        <section className="space-y-4">
-          <h2 className="text-2xl font-semibold">Contact Us</h2>
-          <p>
-            If you have any questions regarding privacy while using the Application, or have questions about the practices, please contact the Service Provider via email at <a href="mailto:matiasdario75@gmail.com" className="underline hover:text-primary">matiasdario75@gmail.com</a>.
+            For privacy-related inquiries, contact the Service Provider at{" "}
+            <a href="mailto:matiasdario75@gmail.com" className="underline hover:text-primary">
+              matiasdario75@gmail.com
+            </a>.
           </p>
         </section>
       </main>
+
+      <Footer />
     </div>
   );
 }
