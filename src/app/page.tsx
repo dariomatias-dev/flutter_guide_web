@@ -1,3 +1,5 @@
+"use client";
+
 import { Code, Smartphone, Sparkles, Star } from "lucide-react";
 import Link from "next/link";
 
@@ -8,6 +10,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { ToggleThemeButton } from "@/components/toggleThemeButton";
 
 export default function Home() {
   const playStoreUrl =
@@ -20,12 +23,11 @@ export default function Home() {
           <div className="flex h-14 max-w-screen-2xl mx-auto items-center justify-between">
             <Link href="/" className="flex items-center space-x-2">
               <Smartphone className="h-6 w-6" />
-
-              <span className="font-bold">Flutter Guide</span>
+              <span className="font-bold text-lg">Flutter Guide</span>
             </Link>
 
-            <nav>
-              <Button asChild>
+            <nav className="flex items-center space-x-4">
+              <Button asChild className="whitespace-nowrap px-4 py-2">
                 <Link
                   href={playStoreUrl}
                   target="_blank"
@@ -34,6 +36,8 @@ export default function Home() {
                   Download
                 </Link>
               </Button>
+
+              <ToggleThemeButton />
             </nav>
           </div>
         </div>
@@ -136,7 +140,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
       </main>
 
       <footer className="w-full border-t bg-background px-16">
@@ -150,10 +153,7 @@ export default function Home() {
           </div>
 
           <div className="text-sm text-muted-foreground">
-            Developed by
-
-            {" "}
-
+            Developed by{" "}
             <Link
               href={"https://github.com/dariomatias-dev"}
               target="_blank"
