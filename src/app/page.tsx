@@ -13,23 +13,20 @@ export default function Home() {
 
   return (
     <div className="bg-background flex min-h-screen w-full flex-col">
-      <header className="bg-background/95 supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50 w-full border-b backdrop-blur">
+      <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="w-full px-4">
-          <div className="mx-auto flex h-14 max-w-screen-2xl items-center justify-between">
+          <div className="flex h-14 max-w-screen-2xl mx-auto items-center justify-between">
             <Link href="/" className="flex items-center space-x-2">
               <Smartphone className="h-6 w-6" />
-              <span className="text-lg font-bold">Flutter Guide</span>
+              <span className="font-bold text-lg">Flutter Guide</span>
             </Link>
 
             <nav className="flex items-center space-x-4">
-              <Button asChild className="px-4 py-2 whitespace-nowrap">
-                <Link
-                  href={playStoreUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Download
+              <Button asChild variant="outline" className="whitespace-nowrap px-4 py-2">
+                <Link href="/privacy-policy">
+                  Privacy Policy
                 </Link>
+
               </Button>
 
               <ToggleThemeButton />
