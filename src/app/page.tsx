@@ -1,12 +1,14 @@
 "use client";
 
 import { Code, Sparkles, Star } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { ScreenshotsCarousel } from "@/components/ScreenshotsCarousel";
 
 export default function Home() {
   const playStoreUrl =
@@ -17,18 +19,28 @@ export default function Home() {
       <Header />
 
       <main className="flex-1">
-        <section className="flex items-center justify-center px-4 pt-6 pb-8 md:py-24">
+        {/* App Icon + Hero Section */}
+        <section className="flex items-center justify-center px-4 pt-10 pb-12 md:py-20">
           <div className="flex max-w-screen-md flex-col items-center space-y-6 text-center">
+            {/* App Icon */}
+            <Image
+              src="/flutter_guide_icon.png"
+              alt="Flutter Guide App Icon"
+              width={96}
+              height={96}
+              className="rounded-2xl shadow-md"
+            />
+
             <h1 className="text-3xl leading-tight font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
               Your Guide to Mastering Flutter
             </h1>
 
-            <p className="text-muted-foreground text-lg sm:text-xl">
+            <p className="text-lg sm:text-xl">
               Learn, practice, and build amazing apps with the best Flutter
               content, right in your pocket.
             </p>
 
-            <p className="text-md text-muted-foreground max-w-prose sm:text-lg">
+            <p className="text-md max-w-prose sm:text-lg">
               An app developed to showcase the potential and versatility of
               Flutter. Highlights include responsive interfaces, smooth
               animations, optimized performance, and seamless API integration.
@@ -48,17 +60,31 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Screenshots Section */}
+        <section
+          id="screenshots"
+          className="flex items-center justify-center px-4 py-12 md:py-20"
+        >
+          <div className="w-full max-w-screen-lg space-y-8 text-center">
+            <h2 className="text-3xl font-bold md:text-4xl">App Screenshots</h2>
+            <p className="text-muted-foreground mx-auto max-w-2xl">
+              Take a look at some of the screens available in Flutter Guide.
+            </p>
+
+            <ScreenshotsCarousel />
+          </div>
+        </section>
+
+        {/* Features Section */}
         <section
           id="features"
-          className="flex items-center justify-center bg-slate-50/50 px-4 py-8 md:py-12 lg:py-24 dark:bg-transparent"
+          className="flex items-center justify-center bg-slate-50/50 px-4 py-10 md:py-16 lg:py-20 dark:bg-transparent"
         >
           <div className="flex w-full max-w-screen-lg flex-col items-center space-y-10 text-center">
             <div className="space-y-4">
-              <h2 className="text-3xl leading-[1.1] font-bold sm:text-3xl md:text-5xl">
-                Key Features
-              </h2>
+              <h2 className="text-3xl font-bold sm:text-4xl">Key Features</h2>
 
-              <p className="text-muted-foreground mx-auto max-w-2xl leading-normal sm:text-lg sm:leading-7">
+              <p className="mx-auto max-w-2xl text-base sm:text-lg">
                 Everything you need to become a skilled Flutter developer.
               </p>
             </div>
@@ -69,12 +95,10 @@ export default function Home() {
                   <CardTitle className="text-lg font-medium">
                     Widget of the Day
                   </CardTitle>
-
-                  <Sparkles className="text-muted-foreground h-5 w-5" />
+                  <Sparkles className="h-5 w-5" />
                 </CardHeader>
-
                 <CardContent>
-                  <p className="text-muted-foreground text-sm">
+                  <p className="text-sm">
                     Explore a new Flutter widget daily, complete with a
                     practical example.
                   </p>
@@ -86,12 +110,10 @@ export default function Home() {
                   <CardTitle className="text-lg font-medium">
                     Tips & Examples
                   </CardTitle>
-
-                  <Code className="text-muted-foreground h-5 w-5" />
+                  <Code className="h-5 w-5" />
                 </CardHeader>
-
                 <CardContent>
-                  <p className="text-muted-foreground text-sm">
+                  <p className="text-sm">
                     Get concise coding tips and practical snippets to enhance
                     your Flutter projects.
                   </p>
@@ -103,12 +125,10 @@ export default function Home() {
                   <CardTitle className="text-lg font-medium">
                     Practical Guidance
                   </CardTitle>
-
-                  <Star className="text-muted-foreground h-5 w-5" />
+                  <Star className="h-5 w-5" />
                 </CardHeader>
-
                 <CardContent>
-                  <p className="text-muted-foreground text-sm">
+                  <p className="text-sm">
                     Benefit from straightforward guides designed to improve your
                     Flutter development workflow.
                   </p>

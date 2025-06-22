@@ -2,9 +2,9 @@ import Link from "next/link";
 
 export const Footer = () => {
   return (
-    <footer className="w-full border-t bg-background px-4 md:px-16">
-      <div className="max-w-screen-2xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 py-6 text-center md:text-left text-muted-foreground text-sm">
-        <div className="flex flex-col md:flex-row items-center gap-2">
+    <footer className="bg-background w-full border-t px-4 md:px-16">
+      <div className="text-muted-foreground mx-auto flex max-w-screen-2xl flex-col items-center justify-between gap-4 py-6 text-center text-sm md:flex-row md:text-left">
+        <div className="flex flex-col items-center gap-2 md:flex-row">
           <span>© 2025 Flutter Guide</span>
 
           <span className="hidden md:inline">|</span>
@@ -13,15 +13,12 @@ export const Footer = () => {
         </div>
 
         <div>
-          Developed by
-
-          {" "}
-
+          Developed by{" "}
           <Link
             href="https://github.com/dariomatias-dev"
             target="_blank"
             rel="noopener noreferrer"
-            className="underline hover:text-primary"
+            className="hover:text-primary underline"
           >
             Dário Matias
           </Link>
@@ -29,4 +26,4 @@ export const Footer = () => {
       </div>
     </footer>
   );
-}
+};
