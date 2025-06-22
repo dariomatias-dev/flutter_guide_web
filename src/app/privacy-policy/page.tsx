@@ -40,9 +40,9 @@ export default function PrivacyPolicy() {
         <section className="text-foreground space-y-5 leading-relaxed">
           <p>
             This Privacy Policy governs how the Flutter Guide app (referred to
-            as the "Application"), developed by Dário Matias ("Service
-            Provider"), collects, uses, and protects your information. This
-            service is offered as-is and free of charge.
+            as the &quot;Application&quot;), developed by Dário Matias
+            (&quot;Service Provider&quot;), collects, uses, and protects your
+            information. This service is offered as-is and free of charge.
           </p>
 
           <h2 className="mt-6 mb-3 text-xl font-semibold md:text-2xl">
@@ -50,13 +50,13 @@ export default function PrivacyPolicy() {
           </h2>
           <p>The Application may collect the following information:</p>
           <ul className="list-inside list-disc space-y-1">
-            <li>Your device's IP address</li>
+            <li>Your device&apos;s IP address</li>
             <li>
               Pages you visit within the Application, along with timestamps and
               duration
             </li>
             <li>Overall time spent on the Application</li>
-            <li>Your mobile device's operating system</li>
+            <li>Your mobile device&apos;s operating system</li>
           </ul>
           <p>The Application does not collect precise geolocation data.</p>
           <p>
