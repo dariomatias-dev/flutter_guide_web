@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Flutter Guide – Official Website
+
+This is the **official website repository** for the [Flutter Guide](https://play.google.com/store/apps/details?id=com.dariomatias.flutter_guide) mobile application, available on the Google Play Store.
+
+The purpose of this website is to showcase the app, present its main features, display screenshots, share the privacy policy, and provide a direct download link.
+
+> **Note:** This repository **does not contain** the source code of the Flutter mobile application. It contains only the code for the **official landing website**.
+
+---
+
+## Tech Stack
+
+The website was built using modern tools and technologies to ensure performance, scalability, and developer productivity:
+
+- **Framework:** [Next.js 14](https://nextjs.org/) with the App Router
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/) for utility-first design
+- **UI Components:** [`shadcn/ui`](https://ui.shadcn.com/) for accessible, customizable components
+- **Programming Language:** TypeScript
+- **Carousel:** [Embla Carousel](https://www.embla-carousel.com/) for smooth and responsive slides
+- **Icons:** [Lucide Icons](https://lucide.dev/) for clean, consistent iconography
+- **Theming:** [next-themes](https://github.com/pacocoursey/next-themes) for light/dark mode toggle
+- **Code Quality:** Prettier and ESLint for formatting and linting
+
+---
+
+## Screenshots
+
+![Screenshot 1](public/screenshots/flutter_guide_screen_1.jpeg)  
+![Screenshot 2](public/screenshots/flutter_guide_screen_2.jpeg)  
+![Screenshot 3](public/screenshots/flutter_guide_screen_3.jpeg)  
+![Screenshot 4](public/screenshots/flutter_guide_screen_4.jpeg)  
+![Screenshot 5](public/screenshots/flutter_guide_screen_5.jpeg)  
+![Screenshot 6](public/screenshots/flutter_guide_screen_6.jpeg)  
+
+---
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+git clone https://github.com/dariomatias-dev/flutter_guide_web.git
+
+cd flutter-guide-site
+
+pnpm install
+
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit [http://localhost:3000](http://localhost:3000) in your browser to see the website locally.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## License
 
-## Learn More
+This project is licensed under the [MIT License](./LICENSE).
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Download the App
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+[![Get it on Google Play](https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png)](https://play.google.com/store/apps/details?id=com.dariomatias.flutter_guide)
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Credits
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Developed by [Dário Matias](https://github.com/dariomatias).
+Design inspired by modern app landing pages focused on accessibility, responsiveness, and user experience.
