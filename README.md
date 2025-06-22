@@ -25,12 +25,14 @@ The website was built using modern tools and technologies to ensure performance,
 
 ## Screenshots
 
-![Screenshot 1](public/screenshots/flutter_guide_screen_1.jpeg)  
-![Screenshot 2](public/screenshots/flutter_guide_screen_2.jpeg)  
-![Screenshot 3](public/screenshots/flutter_guide_screen_3.jpeg)  
-![Screenshot 4](public/screenshots/flutter_guide_screen_4.jpeg)  
-![Screenshot 5](public/screenshots/flutter_guide_screen_5.jpeg)  
-![Screenshot 6](public/screenshots/flutter_guide_screen_6.jpeg)  
+<div align="center">
+  <img src="public/screenshots/flutter_guide_screen_1.jpeg" width="200"/>
+  <img src="public/screenshots/flutter_guide_screen_2.jpeg" width="200"/>
+  <img src="public/screenshots/flutter_guide_screen_3.jpeg" width="200"/>
+  <img src="public/screenshots/flutter_guide_screen_4.jpeg" width="200"/>
+  <img src="public/screenshots/flutter_guide_screen_5.jpeg" width="200"/>
+  <img src="public/screenshots/flutter_guide_screen_6.jpeg" width="200"/>
+</div>
 
 ---
 
