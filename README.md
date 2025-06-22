@@ -14,11 +14,11 @@ The website was built using modern tools and technologies to ensure performance,
 
 - **Framework:** [Next.js 14](https://nextjs.org/) with the App Router
 - **Styling:** [Tailwind CSS](https://tailwindcss.com/) for utility-first design
-- **UI Components:** [`shadcn/ui`](https://ui.shadcn.com/) for accessible, customizable components
-- **Programming Language:** TypeScript
+- **UI Components:** [shadcn/ui](https://ui.shadcn.com/) for accessible, customizable components
+- **Programming Language:** [TypeScript](https://www.typescriptlang.org/) for type-safe development
 - **Carousel:** [Embla Carousel](https://www.embla-carousel.com/) for smooth and responsive slides
 - **Icons:** [Lucide Icons](https://lucide.dev/) for clean, consistent iconography
-- **Theming:** [next-themes](https://github.com/pacocoursey/next-themes) for light/dark mode toggle
+- **Theming:** [next-themes](https://ui.shadcn.com/docs/dark-mode/next) for light/dark mode toggle
 - **Code Quality:** Prettier and ESLint for formatting and linting
 
 ---
@@ -41,7 +41,7 @@ The website was built using modern tools and technologies to ensure performance,
 ```bash
 git clone https://github.com/dariomatias-dev/flutter_guide_web.git
 
-cd flutter-guide-site
+cd flutter_guide_web
 
 pnpm install
 
@@ -66,5 +66,6 @@ This project is licensed under the [MIT License](./LICENSE).
 
 ## Credits
 
-Developed by [Dário Matias](https://github.com/dariomatias).
+Developed by [Dário Matias](https://github.com/dariomatias-dev).
+
 Design inspired by modern app landing pages focused on accessibility, responsiveness, and user experience.
